@@ -1,0 +1,12 @@
+Send Multiple Attachments via Outlook
+
+Purpose:
+Sends an Outlook email with **all files from a specific folder** as attachments to a predefined recipient.
+
+Sub Procedure:
+
+=>SendMultipleAttachments
+
+1. Creates and configures an Outlook email.
+2. Attaches all files from a given folder.
+3. Sends the email automatically.

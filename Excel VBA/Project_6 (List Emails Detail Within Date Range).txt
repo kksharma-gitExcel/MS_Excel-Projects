@@ -1,0 +1,15 @@
+List Email Details Within Date Range
+
+Purpose:
+Extracts emails from Outlook Inbox received within a user-defined date range and displays the details in Excel (Sheet1).
+
+Key Features:
+
+* Validates dates from cells "K1" and "K2".
+* Connects to Outlook and filters emails by received date.
+* Lists sender name, email, subject, CC, received time, and attachment count.
+* Applies header formatting, borders, and date formatting.
+* Alerts user for invalid dates or if no emails are found.
+
+Main Procedure:
+"ListEmailDetailsWithinDateRange" – handles data extraction, filtering, display, and formatting.

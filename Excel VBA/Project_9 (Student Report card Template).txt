@@ -1,0 +1,42 @@
+Generate and Email Student Report Cards
+
+Purpose:
+
+1. Checks if the report folder is empty before generating new reports.
+2. Iterates through each student record to generate personalized report cards.
+3. Filters each student's marks and populates a pre-designed report template.
+4. Calculates grades based on marks and inserts results into the report.
+5. Saves each report as a PDF file and emails it to the student.
+
+Sub Procedures:
+
+1. MainMacro
+
+ =>Main controller loop for generating and emailing report cards.
+ =>Retrieves student records and invokes helper procedures for each student.
+
+2. EntryPoint
+ =>Disables screen updating and alert messages to improve macro speed.
+
+3. ExitPoint
+ =>Re-enaable screen updating and alert messages after all processing.
+
+4. ClearData
+ =>Clears fields from the report card and resets temporary working data.
+
+5. IsolateEachStudentData
+ =>Uses AdvancedFilter to extract only the selected student’s marks.
+
+6. PopulateIndividualReport
+ =>Fills report with student ID, name, course names, marks, and grades.
+ =>Computes average score and final grade.
+
+7. CalculateGrades
+ =>Returns a letter grade (A to F) based on numeric marks.
+
+8. CreateAndSendPDFCopy
+ =>Exports the filled=>in report to a PDF.
+ =>Locates the student's email ID and triggers the email function.
+
+9. EmailPDF
+ =>Sends an email via Outlook with the student's report card attached as PDF.

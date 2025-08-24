@@ -1,0 +1,54 @@
+Separate Movies by Year
+
+Purpose:
+- Analyzes a master movie dataset on "Sheet1".
+- Separates movie records into individual sheets based on "release year"
+- Two different approaches are used (in separate subroutines) to achieve the same goal.
+- Ensures only one copy of each yearly sheet is created and existing non-Sheet1 sheets are deleted beforehand.
+
+---
+
+Sub Procedures:
+
+=> FIRST METHOD
+-----------------------------
+1. DeleteSheets
+- Deletes all worksheets except Sheet1.
+- Suppresses deletion confirmation alerts using `Application.DisplayAlerts = False`.
+
+---
+
+2. SeparateMovieByYear_1
+- Iterates through each movie entry in column A.
+- Extracts the release year from the adjacent cell in column B.
+- For each unique year:
+  - Creates a new worksheet named `"Movie Year - [Year]"` if it doesn't exist.
+  - Copies the row of data into that year's sheet, preserving formatting and column widths.
+- Uses a helper function `SheetExists` to check for existing sheets.
+
+---
+
+=> SECOND METHOD
+-------------------------------
+3. SeparateMovieByYear_2 (Using AutoFilter)
+- Deletes all extra sheets using `DeleteSheets`.
+- Creates a temporary sheet and generates a unique sorted list of years from column B using the `UNIQUE(SORT(YEAR(...)))` formula.
+- For each year:
+  - Creates a new sheet named `"MovieYear - [Year]"` if it doesn’t exist.
+  - Filters the main dataset based on that year using `AutoFilter`.
+  - Copies the visible (filtered) rows into the corresponding sheet.
+- Cleans up:
+  - Deletes the temporary sheet used to calculate unique years.
+  - Autofits all columns in all sheets.
+
+---
+
+=>THIRD METHOD
+------------------------------
+4. SeparateMovieByYear_3 (Using Advanced Filter)
+- Same function as SeparateMovieByYear_2 Sub Procedure but using advanced filter instead autofilter.
+
+Helper Function:
+"SheetExists"
+- Returns `True` if a sheet with the specified name already exists, otherwise `False`.
+- Prevents errors from duplicate sheet creation.
