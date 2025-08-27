@@ -24,7 +24,7 @@ A miscelallneous collection of small projects.
 3. You will find techniques which is used to improve data quality.
 
 ### Getting stared
-To explore the projects, simply navigate to the respective folders and may have to download the file (espeically excel file).
+To explore the projects, simply navigate to the respective folders and may have to download the file (especially excel file).
 
 **Important Note:**
 some file contains Macro code. You many have to adjust your security settings in order to run the code or view the code.
