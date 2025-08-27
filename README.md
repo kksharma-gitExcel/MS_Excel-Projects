@@ -13,7 +13,7 @@ This repository contains a collection of projects related to data analysis focus
    2. manipulate raw data
    3. extend the functinality of excel
   
-**"Extra Projects"**
+**"Extra Projects"**<br>
 A miscelallneous collection of small projects.
 1. Invoice generation and saving it a PDF in local machine.
 2. A simple Employee Payroll.
