@@ -1,6 +1,8 @@
 # My Data Analysis and Excel VBA Projects
 This repository contains a collection of projects related to data analysis focusing on excel , Excel VBA, and data transformation.
 
+---
+
 ### Folder description
 
 **"Excel Dashboard"**
@@ -22,6 +24,8 @@ A miscelallneous collection of small projects.
 1. This folder is dedicated to projects on data cleaning and tranformation.
 2. It includes projects of how to handle messy data using Excel Formulas and fuctions, Filter, Sorting etc and Excel VBA.
 3. You will find techniques which is used to improve data quality.
+
+---
 
 ### Getting stared
 To explore the projects, simply navigate to the respective folders and may have to download the file (especially excel file).
